@@ -1,0 +1,806 @@
+.header1 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(14, 14, 14, 1);
+}
+
+.nav-heading {
+    font-size: 14px;
+    color: #fff;
+}
+.navbar-toggler-icon {
+    background-image: url("images/n-l.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar-icons {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons .icn1 {
+    font-size: 14px !important;
+    padding-left: 10px;
+    color: #fff !important;
+}
+
+.navbar-icons .navbar-border {
+    padding: 0 10px 0 10px !important;
+}
+
+.navbar-border::before {
+    border-color: rgba(255, 255, 255, .25) !important;
+    content: "";
+    display: block;
+    height: 18px;
+    border-right: 1px solid;
+}
+
+.navbar-icons .a1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.header2 {
+    width: 100%;
+    display: flex;
+    height: 75px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header2 .site-icons {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header2 .site-icons a:hover::after {
+    width: 100%;
+
+}
+
+.header2 .site-icons a {
+    position: relative;
+
+}
+
+.header2 .site-icons a::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, rgb(19, 19, 19), rgb(67, 67, 67));
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: .3s;
+
+
+}
+
+.header2 .site-icons .s1 {
+    font-size: 25px;
+    background: -webkit-linear-gradient(#e8b02e, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header2 .site-icons .s2 {
+    font-size: 25px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header2 .register {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.header2 .searchform {
+    width: 300px;
+    position: relative;
+}
+
+.searchform label {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+
+}
+
+.searchform label .icn3 {
+    color: #777;
+    font-size: 30px !important;
+}
+
+.header2 .s {
+    width: 300px;
+    padding: 0 15px;
+    font-size: 15px;
+    height: 46px;
+    outline: none;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 2px solid rgba(247, 247, 247, 1);
+    ;
+}
+
+.header2 .login a {
+    padding: 0 20px;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header2 .header-icons span {
+    color: #333 !important;
+}
+
+.header .navbar-color {
+    margin-bottom: 4rem;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 8px rgb(0 0 0 / 10%);
+}
+
+.navbar-color .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-color .menu1 {
+    font-size: 30px !important;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header .dropdown .a1 {
+    padding-left: 20px !important;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.header .dropdown .a1:hover {
+    color: #777;
+}
+
+.header .dropdown .s1:hover::after {
+    width: 100%;
+
+}
+
+.header .dropdown .s1 {
+    position: relative;
+
+}
+
+.header .dropdown .s1::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, rgb(19, 19, 19), rgb(67, 67, 67));
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: .3s;
+
+
+}
+
+.header3 {
+    width: 100%;
+    height: auto;
+}
+
+.fixheader {
+    z-index: 180;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    animation: move both .4s;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: none !important;
+    background: #fff;
+    width: 200px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 15%);
+    z-index: 1;
+    outline: none;
+    border-radius: 0 !important;
+    transition: .3s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #848484;
+    padding: 16px 16px;
+    text-decoration: none !important;
+    font-size: 12.8px;
+    display: block;
+    transition: .3s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: #242424;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sidenav3 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 16;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(19, 19, 19), rgb(67, 67, 67));
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+/* The navigation menu links */
+.sidenav3 .a {
+    font-size: 50px;
+}
+
+.sidenav3 .a1,
+.a {
+    padding: 0 8px 0 65px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidenav3 .top {
+    height: fit-content;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav3 a:hover {
+    text-decoration: none;
+    color: #e2b324;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav3 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px !important;
+    ;
+    font-size: 50px;
+    color: #fff;
+}
+
+.space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 300px;
+}
+
+.sidenav3 .lefticon1 a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+    transition: 0.3s;
+    font-weight: 300;
+}
+
+.sidenav3 .lefticon1 a:hover {
+    text-decoration: none;
+    color: #275cae;
+}
+
+
+.sidenav3 .lefticon p {
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+    .nav-heading {
+        font-size: 14px !important;
+    }
+
+    .navbar-icons {
+        display: none;
+    }
+
+    .header2 {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .header2 .site-icons {
+        padding: 1rem;
+    }
+
+    .header2 .register {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header2 .searchform {
+        width: 190px;
+
+    }
+
+    .searchform label {
+        top: 8px;
+        right: 10px;
+    }
+
+    .searchform label .icn3 {
+        font-size: 25px !important;
+    }
+
+    .header2 .s {
+        width: 190px;
+        font-size: 12px;
+        border: 4px solid rgba(247, 247, 247, 1);
+    }
+
+    .header2 .login a {
+        font-size: 8px;
+        font-weight: bolder;
+    }
+
+    .navbar-color {
+        margin-top: 20px;
+    }
+
+    .navbar-color .menu1 {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .header1 .none {
+        display: none;
+    }
+
+    .header2 .none {
+        display: none;
+    }
+
+    .header2 .site-icons {
+
+        justify-content: center;
+    }
+
+    .header2 .site-icons .s1 {
+        padding-top: 5px;
+        font-size: 19px;
+
+    }
+
+    .header2 .site-icons .s2 {
+        font-size: 19px;
+        padding-top: 5px;
+    }
+
+    .header2 .register {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header2 .searchform {
+        width: 230px;
+
+    }
+
+    .searchform label {
+        top: 8px;
+        right: 10px;
+    }
+
+    .searchform label .icn3 {
+        font-size: 25px !important;
+    }
+
+    .header2 .s {
+        width: 230px;
+        font-size: 14px;
+        border: 4px solid rgba(247, 247, 247, 1);
+    }
+
+    .header2 .login a {
+        font-size: 16px;
+    }
+
+    .navbar-color {
+
+        margin-top: 20px;
+    }
+
+    .navbar-color .menu1 {
+        display: none;
+    }
+
+}
+
+
+
+
+.header2 .login:hover .nov1 {
+    visibility: unset;
+}
+.section{
+    font-family: 'Merriweather', serif;
+    font-family: 'Pacifico', cursive;
+}
+.header2 .nov1 {
+    font-family: 'Merriweather', serif;
+    font-family: 'Pacifico', cursive;
+    visibility: hidden;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.section a {
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.section a:hover {
+    text-decoration: none;
+}
+
+.section .link {
+    color: #c4c3ca;
+}
+
+.section .link:hover {
+    color: #ffeba7;
+}
+
+.section p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.section h4 {
+
+    font-size: 21px;
+
+    color: #c4c3ca;
+    font-weight: 600;
+}
+
+
+
+.section .section {
+    position: relative;
+    width: 100%;
+    display: block;
+
+}
+
+.section .full-height {
+    min-height: 100vh;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.section .checkbox:checked+label,
+.section .checkbox:not(:checked)+label {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 60px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    z-index: 1;
+    margin: 10px auto;
+    cursor: pointer;
+    background-color: #ffeba7;
+}
+
+.section .checkbox:checked+label:before,
+.section .checkbox:not(:checked)+label:before {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #ffeba7;
+    background-color: #102770;
+    font-family: 'unicons';
+    content: '\eb4f';
+    z-index: 20;
+    top: -10px;
+    left: -10px;
+
+    line-height: 36px;
+    text-align: center;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+
+.section .checkbox:checked+label:before {
+    transform: translateX(44px) rotate(-270deg);
+}
+
+
+.section .card-3d-wrap {
+    position: relative;
+    position: absolute;
+    right: 20px;
+    width: 440px;
+    max-width: 100%;
+    height: 400px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    margin-top: 60px;
+}
+
+.section .card-3d-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all 600ms ease-out;
+}
+
+.section .card-front,
+.section .card-back {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    position: absolute;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+    left: 0;
+    top: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.section .card-back {
+    transform: rotateY(180deg);
+}
+
+.section .checkbox:checked~.card-3d-wrap .card-3d-wrapper {
+    transform: rotateY(180deg);
+}
+
+.section .center-wrap {
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 35px) perspective(100px);
+    z-index: 20;
+    display: block;
+}
+
+
+.section .form-group {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.section .form-style {
+    padding: 13px 20px;
+    padding-left: 55px;
+    height: 48px;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #c4c3ca;
+    background-color: #1f2029;
+    border: none;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+}
+
+.section .form-style:focus,
+.section .form-style:active {
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+}
+
+.section .input-icon {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    color: #ffeba7;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .form-group input:-ms-input-placeholder {
+    color: #c4c3ca;
+    opacity: 0.7;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .form-group input::-moz-placeholder {
+    color: #c4c3ca;
+    opacity: 0.7;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .form-group input:-moz-placeholder {
+    color: #c4c3ca;
+    opacity: 0.7;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .form-group input::-webkit-input-placeholder {
+    color: #c4c3ca;
+    opacity: 0.7;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .form-group input:focus:-ms-input-placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .form-group input:focus::-moz-placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .form-group input:focus:-moz-placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .form-group input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.section .btn {
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    border: none;
+    background-color: #ffeba7;
+    color: #102770;
+    box-shadow: 0 8px 24px 0 rgba(255, 235, 167, .2);
+}
+
+.section .btn:active,
+.section .btn:focus {
+    background-color: #102770;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
+}
+
+.section .btn:hover {
+    background-color: #102770;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
+}
+
+
+
+
+.section .logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    z-index: 100;
+    transition: all 250ms linear;
+}
+
+.section .logo img {
+    height: 26px;
+    width: auto;
+    display: block;
+}
